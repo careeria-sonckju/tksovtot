@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{00FD43A8-CF1E-44E5-A24E-46AE2D4C613A}</ProjectGuid>
+    <ProjectGuid>{DCEFA32D-1AD6-41D2-B84A-53658ED2D3F5}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebAppTest10</RootNamespace>
-    <AssemblyName>WebAppTest10</AssemblyName>
+    <RootNamespace>WebAppTest11</RootNamespace>
+    <AssemblyName>WebAppTest11</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -45,18 +45,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -132,75 +124,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Categories.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Contacts.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CustomerDemographics.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Customers.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\cust_apu.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Documentation.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Employees.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\emp_apu.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Logins.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NorthWind.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NorthWind.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NorthWind.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NorthWind.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NorthWind.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Orders.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Order_Details.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Products.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Region.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Shippers.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Suppliers.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\supp_apu.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sysdiagrams.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Territories.cs">
-      <DependentUpon>NorthWind.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -212,25 +135,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\NorthWind.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NorthWind.edmx</DependentUpon>
-      <LastGenOutput>NorthWind.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\NorthWind.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NorthWind.edmx</DependentUpon>
-      <LastGenOutput>NorthWind.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\NorthWind.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NorthWind.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\NorthWind.edmx.diagram">
-      <DependentUpon>NorthWind.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -259,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -272,9 +179,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -292,9 +196,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>15987</DevelopmentServerPort>
+          <DevelopmentServerPort>17448</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:15987/</IISUrl>
+          <IISUrl>http://localhost:17448/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
